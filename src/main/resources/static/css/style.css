@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Oswald:wght@300;400;500&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+h1{
+    font-family:'Oswald';
+    text-align:center;
+    margin:5px auto;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+body{
+    background:#353b48;
+    color:#f5f6fa;
+}
+.container{
+    text-align:center;
+    width:75%;
+    margin: 0 auto;
+}
+.lista {
+    font-family:'Lato',sans-serif;
+    list-style: none;
+    transition:0.6s;
+    border-radius:5px;
+}
+.lista li{
+    background:#4cd137;
+    display:block;
+    min-height:60px;
+    cursor:pointer;
+    line-height:60px;
+    padding:5px;
+    box-sizing:border-box;
+    vertical-align:middle;
+    text-shadow: 1px 1px 3px #353b48;
+    font-size:1.25em;
+    transition:0.8s;
+}
+.lista li:hover{
+    background:#0097e6;
+}
+.lista li:first-child{
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+}.lista li:last-child{
+     border-bottom-left-radius:5px;
+     border-bottom-right-radius:5px;
+ }
+li.todo{
+    background:#4cd137;
+}
+li.done{
+    background:#e84118;
+    text-decoration: line-through;
+    font-style: italic;
+}
+input[type="text"]{
+    height:40px;
+    font-size:1.5em;
+    border:none;
+    background:#f5f6fa;
+    color:#2f3640;
+    cursor:pointer;
+    transition:0.6s;
+}
+input[type="text"]:hover{
+    background:#dcdde1;
+    border:1px solid #0097e6 !important;
+}
+button{
+    font-family:'Oswald',sans-serif;
+    text-transform:uppercase;
+    color:#f5f6fa;
+    background:#2f3640;
+    height:40px;
+    padding:15px;
+    transition:0.75s;
+    border:none;
+    font-size:1.5em;
+    cursor:pointer;
+    vertical-align: top;
+    line-height:1px;
+}
+button:hover{
+    background:#e1b12c;
+}

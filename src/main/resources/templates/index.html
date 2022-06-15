@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Utwórz swoją listę zakupów</title>
+    <link rel="stylesheet"  th:href="@{/css/style.css}"/>
+
+</head>
+<body>
+<h1>Lista zakupów</h1>
+<div class="container">
+    <ul id="lista" class="lista" >
+        <li th:each="element: ${lista}" th:text="${element.getKey()}" th:class="${element.getValue() == true}? 'done' : 'todo'"></li>
+
+        <!--<li class="todo">lorem</li>
+        <li class="done">ipsum</li>-->
+    </ul>
+    <form action="#">
+        <input id="txt" type="text"  placeholder="Dodaj do listy" name="nazwa"/>
+        <button id="btn">Dodaj</button>
+    </form>
+</div>
+<script th:src="@{/js/index.js}"></script>
+</body>
+</html>
